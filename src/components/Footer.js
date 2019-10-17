@@ -6,10 +6,9 @@ export default function Footer() {
       <div className="inner">
         <h2 className="major">Get in touch</h2>
         <p>
-          Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-          Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-          egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in
-          tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+          If you would like to know more about the kind of work I 
+          do or have questions or querys please do get in touch with me. 
+          I look forward to hearing from you.
         </p>
         <form method="post" action="/#">
           <div className="fields">
