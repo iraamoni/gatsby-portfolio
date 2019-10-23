@@ -34,34 +34,155 @@ import pic28 from '../assets/images/pic28.jpg';
 
 
 import config from '../../config';
+
+const projectSections = [
+  {
+    title: "Poster Design",
+    description: `I have designed the following posters to sell on Etsy Marketplace and also for personal 
+    use too. The designs were created using Photoshop and with a little bit of help from 
+    Illustrator.`,
+    projects: [
+      {
+        image: pic4,
+        title: "cutlery language 101",
+      },
+      {
+        image: pic5,
+        title: "Happy Birthday",
+      },
+      {
+        image: pic6,
+        title: "Periodic Table",
+      },
+      {
+        image: pic7,
+        title: "Love Hormones",
+      },
+      {
+        image: pic8,
+        title: "Love is in the air",
+      },
+      {
+        image: pic9,
+        title: "Programmer problems",
+      },
+      {
+        image: pic11,
+        title: "Love hormones",
+      },
+      {
+        image: pic10,
+        title: "Travel to Sofia",
+      },
+    ]
+  },
+  {
+    title: "Business Cards",
+    description: `Business Card design was the first step of my Graphic Designing career. 
+    Selling print design products on Envato marketplace early on while still 
+    learning the ins and outs of design processes was quite 
+    challenging but something I still enjoy to this day.`,
+    projects: [
+      {
+        image: pic12,
+        title: "Photography",
+      },
+      {
+        image: pic13,
+        title: "Corporate",
+      },
+      {
+        image: pic14,
+        title: "Minimal",
+      },
+      {
+        image: pic15,
+        title: "Fashion/Model",
+      },
+      {
+        image: pic16,
+        title: "Wedding",
+      },
+      {
+        image: pic17,
+        title: "Corporate",
+      },
+      {
+        image: pic18,
+        title: "Corporate",
+      },
+      {
+        image: pic19,
+        title: "Personal",
+      },
+    ]
+  },
+  {
+    title: "Resumè",
+    description: `Traditional resumè can be made using Microsoft office, however Microsoft Office 
+    is very limited when it comes to customising a product based on one's personal 
+    needs. Creating resumès using Illustrator or InDesign should always be a designer's
+    first choice however the following resumès were created using Photoshop as I have been 
+    always comfortable with this software than the others.`,
+    projects: [
+      {
+        image: pic21,
+        title: "Resumè 1",
+      },
+      {
+        image: pic20,
+        title: "Resumè 2",
+      },
+      {
+        image: pic22,
+        title: "Resumè 3",
+      },
+      {
+        image: pic23,
+        title: "Resumè 4",
+      },
+    ]
+  },
+  {
+    title: "Brochure",
+    description: `The following brochures were also created for commercial purposes using Photoshop. 
+    Although they were designed quite some time ago, these design works are still 
+    something I am quite proud off! `,
+    projects: [
+      {
+        image: pic24,
+        title: "Personal Brochure",
+      },
+      {
+        image: pic25,
+        title: "Corporate Brochure",
+      },
+      {
+        image: pic26,
+        title: "Corporate Brochure",
+      },
+      {
+        image: pic27,
+        title: "Corporate Brochure",
+      },
+    ]
+  },
+];
+
 const IndexPage = () => {
-  const [showAllPosters, setShowAllPosters] = useState(false);
-  const showPoster = () => {
-    setShowAllPosters(true);
-  };
-  const hidePoster = () => {
-    setShowAllPosters(false);
-  };
-  
-  const [showAllBusinessCards, setShowAllBusinessCards] = useState(false); 
-  const showBusinessCards = () => {
-    setShowAllBusinessCards (true);
+  const [openedSections, setOpenedSections] = useState([]);
+
+  const openSection = (projectSectionTitle) => {
+    const newOpenedSections = [...openedSections, projectSectionTitle];
+    setOpenedSections(newOpenedSections);
   };
 
-  const hideBusinessCards = () => {
-    setShowAllBusinessCards (false);
+  const closeSection = (projectSectionTitle) => {
+    const newOpenedSections = openedSections.filter(sectionTitle => sectionTitle !== projectSectionTitle);
+    setOpenedSections(newOpenedSections);
   };
 
-  const [showAllResume, setShowAllResume] = useState(false); 
-  const showResume = () => {
-    setShowAllResume (true);
-  };
-
-  const hideResume = () => {
-    setShowAllResume (false);
-  };
-
-
+  console.log(openedSections)
   return (
     <Layout>
       <section id="banner">
@@ -104,7 +225,7 @@ const IndexPage = () => {
               Jarme is currently available on <a href="https://apps.apple.com/us/app/jarme-diary-mood-tracker/id1112553386" target= "_blank">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.bdgeeks.jarme&hl=en" target= "_blank">Android</a>, <a href="https://web.jarmemori.es/auth#/auth" target= "_blank">web</a> and Desktop (Macintosh & Linux).
               </p>
               <a href="https://jarmemori.es" target="_blank" className="special">
-                Visit Jarme Site
+                Visit Jarme
               </a>
             </div>
           </div>
@@ -121,7 +242,7 @@ const IndexPage = () => {
               A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. Designed the website and the mobile app (Android, iOS) using Photoshop, Illustrator and Sketch and nativebase component design guideline for platform agnostic look and feel.
               </p>
               <a href="https://naao.delivery/" target="_blank" className="special">
-                Visit Naao Site
+                Visit Naao
               </a>
             </div>
           </div>
@@ -145,109 +266,32 @@ const IndexPage = () => {
           </div>
         </section>
         
-        <section id="four" className="wrapper project alt style1">
+        {projectSections.map((projectSection, i) => (
+          <section className={`wrapper project ${(i%2) === 0 ? "alt" : ""} style${i+1}`}>
           <div className="inner">
-            <h2 className="major">Poster Design</h2>
-            <p>
-            Print design was the first step of my Graphic Designing career. 
-            Selling a lot of print design products (i.e: business card, 
-            brochures etc.) on Envato marketplace early on while still 
-            learning the ins and outs of design processes was quite 
-            challenging but something I still enjoy to this day.
-            </p>
+            <h2 className="major">{ projectSection.title }</h2>
+            <p>{projectSection.description}</p>
+
             <section className="features">
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic4} alt="" />
-                </a>
-                <h3 className="major">cutlery language 101</h3>
-                {/* <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p> */}
-                {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-              </article>
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic5} alt="" />
-                </a>
-                <h3 className="major">Happy Birthday</h3>
-                {/* <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                  nulla dignissim dapibus ultrices.
-                </p> */}
-                {/* <a href="/#" className="special">
-                  Learn more
-                </a> */}
-              </article>
-              
-              {showAllPosters && (
-                <>
-                  <article>
-                    <a href="/#" className="image">
-                      <img src={pic6} alt="" />
-                    </a>
-                    <h3 className="major">Periodic Table</h3>
-                    {/* <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                      nulla dignissim dapibus ultrices.
-                    </p> */}
-                    {/* <a href="/#" className="special">
-                      Learn more
-                    </a> */}
-                  </article>
-                  <article>
-                    <a href="/#" className="image">
-                      <img src={pic7} alt="" />
-                    </a>
-                    <h3 className="major">Love Hormones</h3>
-                    {/* <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id
-                      nulla dignissim dapibus ultrices.
-                    </p> */}
-                    {/* <a href="/#" className="special">
-                      Learn more
-                    </a> */}
-                  </article>
-                  <article>
-                    <a href="/#" className="image">
-                      <img src={pic8} alt="" />
-                    </a>
-                    <h3 className="major">Love is in the air</h3>
-                  </article>
-                  <article>
-                    <a href="/#" className="image">
-                      <img src={pic9} alt="" />
-                    </a>
-                    <h3 className="major">Programmer problems</h3>
-                  </article>
-                  <article>
-                    <a href="/#" className="image">
-                      <img src={pic11} alt="" />
-                    </a>
-                    <h3 className="major">Love hormones</h3>
-                  </article>
-                  <article>
-                <a href="/#" className="image">
-                  <img src={pic10} alt="" />
-                </a>
-                <h3 className="major">Travel to Sofia</h3>
-              </article>
-                </>
-              )}
+              {projectSection.projects.slice(0, openedSections.indexOf(projectSection.title) >= 0 ? projectSection.projects.length : 2).map(project => (
+                <article>
+                  <a href="/#" className="image">
+                    <img src={project.image} alt="" />
+                  </a>
+                  <h3 className="major">{ project.title }</h3>
+                </article>
+              ))}
             </section>
             <ul className="actions">
               <li>
-                {showAllPosters && (
-                  <span className="button" onClick = {hidePoster}>
+                {openedSections.indexOf(projectSection.title) >= 0 && (
+                  <span className="button" onClick = {() => closeSection(projectSection.title)}>
                     See Less
                   </span>
                 )}
 
-                {!showAllPosters && (
-                  <span className="button" onClick = {showPoster}>
+                {openedSections.indexOf(projectSection.title) < 0 && (
+                  <span className="button" onClick = {() => openSection(projectSection.title)}>
                     See more
                   </span>
                 )}
@@ -255,209 +299,9 @@ const IndexPage = () => {
             </ul>
           </div>
         </section>
-        <section id="four" className="wrapper project style2">
-          <div className="inner">
-            <h2 className="major">Business Cards</h2>
-            <p>
-            Print design was the first step of my Graphic Designing career. 
-            Selling a lot of print design products (i.e: business card, 
-            brochures etc.) on Envato marketplace early on while still 
-            learning the ins and outs of design processes was quite 
-            challenging but something I still enjoy to this day.
-            </p>
-            <section className="features">
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic12} alt="" />
-                </a>
-                <h3 className="major">Photography</h3>
-              </article>
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic13} alt="" />
-                </a>
-                <h3 className="major">Corporate</h3>
-              </article>
-              
-              {showAllBusinessCards && (
-              <>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic14} alt="" />
-                  </a>
-                  <h3 className="major">Minimal</h3>
-                </article>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic15} alt="" />
-                  </a>
-                  <h3 className="major">Fashion/Model</h3>
-                </article>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic16} alt="" />
-                  </a>
-                  <h3 className="major">Wedding</h3>
-                </article>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic17} alt="" />
-                  </a>
-                  <h3 className="major">Corporate</h3>
-                </article>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic18} alt="" />
-                  </a>
-                  <h3 className="major">Corporate</h3>
-                </article>
-                <article>
-                <a href="/#" className="image">
-                  <img src={pic19} alt="" />
-                </a>
-                <h3 className="major">Personal</h3>
-              </article>
-              </>
-              )}
-            </section>
-            <ul className="actions">
-              <li>
-              {showAllBusinessCards && (
-                  <span className="button" onClick = {hideBusinessCards}>
-                    See Less
-                  </span>
-                )}
-
-              {!showAllBusinessCards && (
-                  <span className="button" onClick = {showBusinessCards}>
-                    See more
-                  </span>
-                )}
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="four" className="wrapper project alt style3">
-          <div className="inner">
-            <h2 className="major">Resumè</h2>
-            <p>
-            Print design was the first step of my Graphic Designing career. 
-            Selling a lot of print design products (i.e: business card, 
-            brochures etc.) on Envato marketplace early on while still 
-            learning the ins and outs of design processes was quite 
-            challenging but something I still enjoy to this day.
-            </p>
-            <section className="features">
-              
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic21} alt="" />
-                </a>
-                <h3 className="major">Resumè 2</h3>
-              </article>
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic20} alt="" />
-                </a>
-                <h3 className="major">Resumè 1</h3>
-              </article>
-              
-              {showAllResume && (
-              <>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic22} alt="" />
-                  </a>
-                  <h3 className="major">Resumè 3</h3>
-                </article>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic23} alt="" />
-                  </a>
-                  <h3 className="major">Resumè 4</h3>
-                </article>
-                
-              </>
-              )}
-            </section>
-            <ul className="actions">
-              <li>
-              {showAllResume && (
-                  <span className="button" onClick = {hideResume}>
-                    See Less
-                  </span>
-                )}
-
-              {!showAllResume && (
-                  <span className="button" onClick = {showResume}>
-                    See more
-                  </span>
-                )}
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="four" className="wrapper project style4">
-          <div className="inner">
-            <h2 className="major">Brochure</h2>
-            <p>
-            Print design was the first step of my Graphic Designing career. 
-            Selling a lot of print design products (i.e: business card, 
-            brochures etc.) on Envato marketplace early on while still 
-            learning the ins and outs of design processes was quite 
-            challenging but something I still enjoy to this day.
-            </p>
-            <section className="features">
-              
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic24} alt="" />
-                </a>
-                <h3 className="major">Personal Brochure</h3>
-              </article>
-              <article>
-                <a href="/#" className="image">
-                  <img src={pic25} alt="" />
-                </a>
-                <h3 className="major">Corporate Brochure</h3>
-              </article>
-              
-              
-              {showAllResume && (
-              <>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic26} alt="" />
-                  </a>
-                  <h3 className="major">Brochure</h3>
-                </article>
-                <article>
-                  <a href="/#" className="image">
-                    <img src={pic27} alt="" />
-                  </a>
-                  <h3 className="major">Brochure</h3>
-                </article>
-              </>
-              )}
-            </section>
-            <ul className="actions">
-              <li>
-              {showAllResume && (
-                  <span className="button" onClick = {hideResume}>
-                    See Less
-                  </span>
-                )}
-
-              {!showAllResume && (
-                  <span className="button" onClick = {showResume}>
-                    See more
-                  </span>
-                )}
-              </li>
-            </ul>
-          </div>
-        </section>
-      </section>
+        
+        ))}
+  </section>
     </Layout>
   );
 };

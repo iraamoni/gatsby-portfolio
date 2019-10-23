@@ -25,7 +25,7 @@ module.exports = {
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'suboorna@gmail.com',
+      url: 'mailto:suboorna@gmail.com',
     },
     {
       icon: 'fa-dribbble',

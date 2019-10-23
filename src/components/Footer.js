@@ -10,7 +10,19 @@ export default function Footer() {
           do or have questions or querys please do get in touch with me. 
           I look forward to hearing from you.
         </p>
-        <form method="post" action="/#">
+        <ul className="contact">
+          {config.socialLinks.map(social => {
+            const { icon, url } = social;
+            return (
+              <li key={url}>
+                <a href={url}>
+                  <i className={`fa ${icon}`}></i>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        {/* <form method="post" action="/#">
           <div className="fields">
             <div className="field">
               <label htmlFor="name">Name</label>
@@ -30,7 +42,7 @@ export default function Footer() {
               <input type="submit" value="Send Message" />
             </li>
           </ul>
-        </form>
+        </form> */}
         <ul className="copyright">
           <li>&copy; Solid State. All rights reserved.</li>
           <li>

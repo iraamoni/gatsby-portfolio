@@ -18,7 +18,7 @@ const IndexPage = () => (
         </div>
       </header>
 
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <div className="inner">
           <h3 className="major">The history behind Jarme</h3>
           <p>
@@ -89,7 +89,7 @@ const IndexPage = () => (
           <h3 className="major">Design Inspirations</h3>
           <p>Dribbble, Uplabs, Behance, Pinterest </p>
         </div>
-        </div>
+        </div> */}
     </section>
   </Layout>
 );
