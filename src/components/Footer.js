@@ -44,10 +44,7 @@ export default function Footer() {
           </ul>
         </form> */}
         <ul className="copyright">
-          <li>&copy; Solid State. All rights reserved.</li>
-          <li>
-            Design: <a href="http://html5up.net">HTML5 UP</a>
-          </li>
+          <li>&copy; Suborna Jahan. All rights reserved.</li>
         </ul>
       </div>
     </section>
