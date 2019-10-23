@@ -10,15 +10,30 @@
 		list-style: none;
 		padding: 0;
 
+		
+		@include vendor(
+			'transition',
+			('opacity 0.5s ease', 'transform 0.5s ease', 'filter 0.25s ease')
+		);
+		@include vendor('transform', 'translateX(0)');
+		@include vendor('transition-delay', '0.8s');
+		@include vendor('filter', 'blur(0)');
+		opacity: 1;
+
+		
+		.main-body.is-preload &,
+		body.is-preload & {
+			@include vendor('transform', 'translateY(0.5em)');
+			opacity: 0;
+			}	  
+
 		li {
 			@include icon;
-			margin: (_size(element-margin) * 1.25) 0 0 0;
-			padding: 0 0 0 3.25em;
+			padding-right: 2em;
 			position: relative;
+			display: inline-block;
 
 			&:before {
-				border-radius: 100%;
-				border: solid 2px _palette(border);
 				display: inline-block;
 				font-size: 0.8em;
 				height: 2.5em;

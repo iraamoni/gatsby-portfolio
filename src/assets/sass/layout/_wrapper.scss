@@ -173,7 +173,24 @@
     }
   }
 
-  &.spotlight {
+  &.project {
+
+    @for $i from 2 through _misc(max-wrapper-styles) {
+      $j: 3 * ($i - 1);
+      $color: desaturate(lighten(_palette(bg), $j), $j * 0.5);
+  
+      &.style#{$i} {
+        background-color: $color;
+        @include wrapper-edges-color($color);
+
+        article {
+          background-color: darken($color, 3.5);
+        }
+      }
+    }
+  }
+
+   &.spotlight {
     @include wrapper-edges-color(_palette(accent));
     background-color: _palette(accent);
 
@@ -222,6 +239,37 @@
       }
     }
   }
+
+  .skill-box {
+    width: 28.3%;
+    display: inline-block;
+    padding: 10px 2.5%;
+
+    p {
+      text-align: center;
+      padding-top: 10px;
+      font-size: 1.2em;
+    }
+  }
+  
+  
+  &.skill-section {
+
+    @for $i from 2 through _misc(max-wrapper-styles) {
+      $j: 3 * ($i - 1);
+      $color: desaturate(lighten(_palette(bg), $j), $j * 0.5);
+  
+      &.style#{$i} {
+        background-color: $color;
+        @include wrapper-edges-color($color);
+
+        article {
+          background-color: darken($color, 3.5);
+        }
+      }
+    }
+  }
+
 
   @include breakpoint('<=medium') {
     margin: _size(wrapper-edges, medium) 0;

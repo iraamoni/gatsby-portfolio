@@ -22,9 +22,9 @@ export default function Nav({ onMenuToggle = () => {} }) {
               onClick={e => {
                 onMenuToggle();
               }}
-              to="/Generic"
+              to="/skills"
             >
-              Generic Page
+              Skills
             </Link>
           </li>
           <li>

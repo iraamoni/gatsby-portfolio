@@ -60,7 +60,7 @@
 					@include icon;
 					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
 					border-radius: _size(border-radius);
-					box-shadow: inset 0 0 0 2px _palette(border);
+					// box-shadow: inset 0 0 0 2px _palette(border);
 					padding: 0 1.35em;
 
 					&:before {

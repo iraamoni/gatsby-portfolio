@@ -1,39 +1,37 @@
 module.exports = {
   siteTitle: "Suborna's portfolio", // <title>
-  manifestName: 'SolidState',
+  manifestName: "Suborna's portfolio",
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
-  manifestBackgroundColor: '#663399',
-  manifestThemeColor: '#663399',
+  manifestBackgroundColor: '#ffffff',
+  manifestThemeColor: '#6ffffff',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
   pathPrefix: `/gatsby-starter-solidstate/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Nargis Jahan Suborna',
-  subHeading: 'Junior UI/UX Designer.  ',
+  subHeading: 'Junior UI/UX Designer and a mountain lover.  ',
   // social
   socialLinks: [
+    {
+      icon: 'fa-twitter',
+      name: 'Twitter',
+      url: 'https://twitter.com/suborna00',
+    },
     {
       icon: 'fa-leaf',
       name: 'GraphicRiver',
       url: 'https://graphicriver.net/user/hexkode/portfolio',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/suborna00',
-    },
-    // {
-    //   icon: 'fa-facebook',
-    //   name: 'Facebook',
-    //   url: 'https://facebook.com/theanubhav',
-    // },
-    {
-      icon: 'fa-envelope',
+      icon: 'fa-envelope-o',
       name: 'Email',
       url: 'suboorna@gmail.com',
     },
+    {
+      icon: 'fa-dribbble',
+      name: 'Dribble',
+      url: 'https://dribbble.com/suborna',
+    },
   ],
 
-  phone: '+447 402 461 849',
-  address: 'Northampton, United Kingdom',
 };

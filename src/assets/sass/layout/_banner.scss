@@ -14,6 +14,10 @@
     width: _size(inner);
   }
 
+  // .contact li {
+  //   display: inline-block;
+  // }
+
   .logo {
     @include vendor('transition', ('opacity 2s ease', 'transform 1s ease'));
     @include vendor('transform', 'translateY(0)');
@@ -30,6 +34,13 @@
       line-height: 2.25em;
       text-align: center;
       width: 2.25em;
+    }
+
+    img {
+      max-width: 120px;
+      border-radius: 100%;
+      border: solid 2px _palette(border);
+      display: inline-block;
     }
   }
 

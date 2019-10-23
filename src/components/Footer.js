@@ -31,20 +31,6 @@ export default function Footer() {
             </li>
           </ul>
         </form>
-        <ul className="contact">
-          <li className="fa-home">{config.address}</li>
-
-          <li className="fa-phone">{config.phone}</li>
-
-          {config.socialLinks.map(social => {
-            const { icon, url } = social;
-            return (
-              <li className={`${icon}`} key={url}>
-                <a href={url}>{url}</a>
-              </li>
-            );
-          })}
-        </ul>
         <ul className="copyright">
           <li>&copy; Solid State. All rights reserved.</li>
           <li>

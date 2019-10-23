@@ -29,6 +29,8 @@ import pic24 from '../assets/images/pic24.jpg';
 import pic25 from '../assets/images/pic25.jpg';
 import pic26 from '../assets/images/pic26.jpg';
 import pic27 from '../assets/images/pic27.jpg';
+import pic28 from '../assets/images/pic28.jpg';
+
 
 
 import config from '../../config';
@@ -65,20 +67,36 @@ const IndexPage = () => {
       <section id="banner">
         <div className="inner">
           <div className="logo">
-            <span className="icon fa-diamond"></span>
+            {/* <span className="icon fa-diamond"></span> */}
+            <img src={pic28} alt=""/>
           </div>
           <h2>{config.heading}</h2>
           <p>{config.subHeading}</p>
+          <ul className="contact">
+          {config.socialLinks.map(social => {
+            const { icon, url } = social;
+            return (
+              <li key={url}>
+                <a href={url}>
+                  <i className={`fa ${icon}`}></i>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
         </div>
+        
       </section>
       <section id="wrapper">
         <section id="one" className="wrapper spotlight style1">
           <div className="inner">
-            <a href="/#" className="image">
+            <a href="http://localhost:8000/jarme" target ="_blank" className="image">
               <img src={pic1} alt="" />
             </a>
             <div className="content">
-              <h2 className="major">Jarme Platform</h2>
+              <h2 className="major">
+                <a href="http://localhost:8000/jarme" target ="_blank">Jarme Platform</a>
+              </h2>
               <p>
               Designed the entire suite of diary/mood tracker app using Sketch
               and Photoshop and worked closely with the developer throughout the 
@@ -86,23 +104,24 @@ const IndexPage = () => {
               Jarme is currently available on <a href="https://apps.apple.com/us/app/jarme-diary-mood-tracker/id1112553386" target= "_blank">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.bdgeeks.jarme&hl=en" target= "_blank">Android</a>, <a href="https://web.jarmemori.es/auth#/auth" target= "_blank">web</a> and Desktop (Macintosh & Linux).
               </p>
               <a href="https://jarmemori.es" target="_blank" className="special">
-                Visit Jarme
+                Visit Jarme Site
               </a>
             </div>
           </div>
         </section>
         <section id="two" className="wrapper alt spotlight style2">
           <div className="inner">
-            <a href="/#" className="image">
+            <a href="http://localhost:8000/naao" target ="_blank" className="image">
               <img src={pic2} alt="" />
             </a>
             <div className="content">
-              <h2 className="major">Naao Platform</h2>
+              <h2 className="major">
+                <a href="http://localhost:8000/naao" target ="_blank">Naao Platform</a></h2>
               <p>
               A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. Designed the website and the mobile app (Android, iOS) using Photoshop, Illustrator and Sketch and nativebase component design guideline for platform agnostic look and feel.
               </p>
               <a href="https://naao.delivery/" target="_blank" className="special">
-                Visit Naao
+                Visit Naao Site
               </a>
             </div>
           </div>
@@ -113,13 +132,11 @@ const IndexPage = () => {
               <img src={pic3} alt="" />
             </a>
             <div className="content">
-              <h2 className="major">Nullam dignissim</h2>
+              <h2 className="major">A series of unfortunate events</h2>
               <p>
-                Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras
-                turpis ante, nullam sit amet turpis non, sollicitudin posuere
-                urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim
-                dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla
-                cursus.
+                This app is currently under the design and development process.
+                The idea has been generated very recently and we are trying our best 
+                to get it up and running as soon as possible. Till then stay tuned! 
               </p>
               <a href="/#" className="special">
                 Learn more
@@ -238,7 +255,7 @@ const IndexPage = () => {
             </ul>
           </div>
         </section>
-        <section id="four" className="wrapper project alt style2">
+        <section id="four" className="wrapper project style2">
           <div className="inner">
             <h2 className="major">Business Cards</h2>
             <p>
@@ -380,7 +397,7 @@ const IndexPage = () => {
             </ul>
           </div>
         </section>
-        <section id="four" className="wrapper project alt style4">
+        <section id="four" className="wrapper project style4">
           <div className="inner">
             <h2 className="major">Brochure</h2>
             <p>
@@ -404,6 +421,7 @@ const IndexPage = () => {
                 </a>
                 <h3 className="major">Corporate Brochure</h3>
               </article>
+              
               
               {showAllResume && (
               <>
