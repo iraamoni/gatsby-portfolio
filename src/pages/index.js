@@ -104,7 +104,7 @@ const IndexPage = () => {
               Jarme is currently available on <a href="https://apps.apple.com/us/app/jarme-diary-mood-tracker/id1112553386" target= "_blank">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.bdgeeks.jarme&hl=en" target= "_blank">Android</a>, <a href="https://web.jarmemori.es/auth#/auth" target= "_blank">web</a> and Desktop (Macintosh & Linux).
               </p>
               <a href="https://jarmemori.es" target="_blank" className="special">
-                Visit Jarme
+                Visit Jarme Site
               </a>
             </div>
           </div>
