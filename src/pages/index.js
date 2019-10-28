@@ -287,10 +287,17 @@ const IndexPage = () => {
             );
           })}
         </ul>
-
-        <a href={config.socialLinks[3].url} target="_blank" rel="noopener noreferrer" className="button primary small">
-          Hire Me
-        </a>
+        
+        <div className="hire-me-btn">
+          <a 
+            href={config.socialLinks[3].url} 
+            target="_blank" 
+            className="hire-me-btn"
+            rel="noopener noreferrer" 
+            className="button primary small">
+            Hire Me
+          </a>
+        </div>
         </div>
         
       </section>

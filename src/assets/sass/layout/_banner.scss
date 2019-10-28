@@ -59,6 +59,17 @@
     padding-bottom: _size(element-margin) * 0.2;
   }
 
+  .hire-me-btn {
+    @include vendor(
+      'transition',
+      ('opacity 0.5s ease', 'transform 0.5s ease', 'filter 0.25s ease')
+    );
+    @include vendor('transform', 'translateX(0)');
+    @include vendor('transition-delay', '0.85s');
+    @include vendor('filter', 'blur(0)');
+    opacity: 1;
+  }
+
   p {
     @include vendor(
       'transition',
@@ -125,6 +136,13 @@
     p {
       font-size: 0.8em;
     }
+
+    .hire-me-btn {
+      .button {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
   }
 
   .main-body.is-preload &,
@@ -138,6 +156,11 @@
       opacity: 0;
       @include vendor('transform', 'translateX(0.25em)');
       @include vendor('filter', 'blur(2px)');
+    }
+
+    .hire-me-btn {
+      opacity: 0;
+      @include vendor('transform', 'translateX(0.25em)');
     }
 
     p {
