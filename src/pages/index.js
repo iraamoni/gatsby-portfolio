@@ -30,12 +30,91 @@ import pic25 from '../assets/images/pic25.jpg';
 import pic26 from '../assets/images/pic26.jpg';
 import pic27 from '../assets/images/pic27.jpg';
 import pic28 from '../assets/images/pic28.jpg';
+import pic29 from '../assets/images/pic29.jpg';
+import pic30 from '../assets/images/pic30.jpg';
+import pic31 from '../assets/images/pic31.jpg';
+import pic32 from '../assets/images/pic32.jpg';
+import pic33 from '../assets/images/pic33.jpg';
+import pic34 from '../assets/images/pic34.jpg';
+import pic35 from '../assets/images/pic35.jpg';
+import pic36 from '../assets/images/pic36.jpg';
+import pic37 from '../assets/images/pic37.jpg';
+import pic38 from '../assets/images/pic38.jpg';
 
 
 
 import config from '../../config';
 
 const projectSections = [
+  
+  {
+    title: "Mobile UI/UX design",
+    description: `The following projects were designed using a mixture of Sketch, Figma, Illustration
+    and Photoshop. I have been designing mobile app on and off since 2016 and have started playing around 
+    with Figma and Adobe XD very recently.`,
+    projects: [
+      {
+        image: pic29,
+        link: "https://dribbble.com/shots/7848998-Naao-Login-Page",
+        title: "Naao login page",
+      },
+      {
+        image: pic30,
+        link: "https://dribbble.com/shots/7848233-Torino-GTT-Bus-App",
+        title: "Torino GTT App redesign",
+      },
+      {
+        image: pic31,
+        link: "https://dribbble.com/shots/7848610-Naao-Onboarding-Screen",
+        title: "Naao Onboarding screen",
+      },
+      {
+        image: pic32,
+        link: "https://dribbble.com/shots/7863030-Empty-page-illustration",
+        title: "Empty page illustration",
+      },
+      {
+        image: pic33,
+        link: "https://dribbble.com/shots/7863943-Empty-search-page",
+        title: "Empty search page",
+      },
+      {
+        image: pic34,
+        link: "https://dribbble.com/shots/7863316-Crowdsource-package-Delivery",
+        title: "naao mobile UI",
+      },
+      {
+        image: pic38,
+        link: "https://dribbble.com/shots/4066269-Jarme-Onboarding-Screens",
+        title: "Jarme Onboarding screen",
+      },
+    ]
+  },
+  {
+    title: "WebSite Design",
+    description: `I have tried to keep the look and feel of the websites both friendly
+    and approachable. The color combination should easily catch users eyes and the layout
+    of the sites were also divided into sections for the users to be able to easily grab 
+    the information they want. I have also used some illustrations to keep the webpage look
+    less boring while providing meaningful informations. 
+    Software used: Photoshop, Illustrator`,
+    projects: [
+      {
+        image: pic35,
+        link: "https://naao.delivery/",
+        title: "Naao Website",
+      },
+      {
+        image: pic36,
+        link: "https://jarmemori.es/",
+        title: "Jarme Website",
+      },
+      {
+        image: pic37,
+        title: "Jarme SignIn/SignUp",
+      },
+    ]
+  },
   {
     title: "Poster Design",
     description: `I have designed the following posters to sell on Etsy Marketplace and also for personal 
@@ -211,12 +290,12 @@ const IndexPage = () => {
       <section id="wrapper">
         <section id="one" className="wrapper spotlight style1">
           <div className="inner">
-            <a href="http://localhost:8000/jarme" target ="_blank" rel="noopener noreferrer" className="image">
+            <a href="/jarme" target ="_blank" className="image">
               <img src={pic1} alt="" />
             </a>
             <div className="content">
               <h2 className="major">
-                <a href="http://localhost:8000/jarme" target ="_blank" rel="noopener noreferrer">Jarme Platform</a>
+                <a href="/jarme" target ="_blank">Jarme Platform</a>
               </h2>
               <p>
               Designed the entire suite of diary/mood tracker app using Sketch
@@ -232,12 +311,12 @@ const IndexPage = () => {
         </section>
         <section id="two" className="wrapper alt spotlight style2">
           <div className="inner">
-            <a href="http://localhost:8000/naao" target ="_blank" rel="noopener noreferrer" className="image">
+            <a href="/naao" target ="_blank" className="image">
               <img src={pic2} alt="" />
             </a>
             <div className="content">
               <h2 className="major">
-                <a href="http://localhost:8000/naao" target ="_blank" rel="noopener noreferrer">Naao Platform</a></h2>
+                <a href="/naao" target ="_blank" rel="noopener noreferrer">Naao Platform</a></h2>
               <p>
               A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. Designed the website and the mobile app (Android, iOS) using Photoshop, Illustrator and Sketch and nativebase component design guideline for platform agnostic look and feel.
               </p>
@@ -275,7 +354,7 @@ const IndexPage = () => {
             <section className="features">
               {projectSection.projects.slice(0, openedSections.indexOf(projectSection.title) >= 0 ? projectSection.projects.length : 2).map(project => (
                 <article>
-                  <a href="/#" className="image">
+                  <a href={project.link || "/#"} className="image">
                     <img src={project.image} alt="" />
                   </a>
                   <h3 className="major">{ project.title }</h3>
