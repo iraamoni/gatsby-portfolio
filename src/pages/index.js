@@ -261,7 +261,6 @@ const IndexPage = () => {
     setOpenedSections(newOpenedSections);
   };
 
-  console.log(openedSections)
   return (
     <Layout>
       <section id="banner">
@@ -274,16 +273,24 @@ const IndexPage = () => {
           <p>{config.subHeading}</p>
           <ul className="contact">
           {config.socialLinks.map(social => {
-            const { icon, url } = social;
+            const { icon, url, name } = social;
             return (
               <li key={url}>
-                <a href={url}>
-                  <i className={`fa ${icon}`}></i>
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  {!!icon ? (
+                    <i className={`fa ${icon}`}></i>
+                  ) : (
+                    <span className="button primary small">{ name }</span>
+                  )}
                 </a>
               </li>
             );
           })}
         </ul>
+
+        <a href={config.socialLinks[3].url} target="_blank" rel="noopener noreferrer" className="button primary small">
+          Hire Me
+        </a>
         </div>
         
       </section>
