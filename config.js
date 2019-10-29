@@ -32,6 +32,12 @@ module.exports = {
       name: 'Dribble',
       url: 'https://dribbble.com/suborna',
     },
+    {
+      icon: 'fa-behance ',
+      name: 'Behance ',
+      url: 'https://behance.net/suborna',
+    },
+    
   ],
 
 };
