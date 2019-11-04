@@ -303,6 +303,53 @@ const IndexPage = () => {
       <section id="wrapper">
         <section id="one" className="wrapper spotlight style1">
           <div className="inner">
+            <a href="/#" className="image">
+              <img src={pic3} alt="" />
+            </a>
+            <div className="content">
+              <h2 className="major">GTT App torino [Redesign]</h2>
+              <p>
+                I have been living on an off in Torino, Italy with my husband 
+                for the past 3 years and Torino GTT App is something I pretty much 
+                use every other day. Hence I tried to redesign the app as a personal project for the purpose of learning Figma <br/>
+                <strong>Original GTT App:</strong> <a href="https://play.google.com/store/apps/details?id=it.fivet.gttmobile&hl=en" target= "_blank" rel="noopener noreferrer">Android</a>, 
+                <a href="https://apps.apple.com/it/app/gtt-mobile/id531319309" target= "_blank" rel="noopener noreferrer"> iOS</a> <br/>
+                <strong>Tool: </strong>Figma | <strong>Font: </strong>Roboto, FontAwesome<br/>
+                <strong>Plugins: </strong> Map Maker, Iconify, Loreum Ipsum <br/>
+              </p>
+              <a href="/#" className="special">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="two" className="wrapper alt spotlight style2">
+          <div className="inner">
+            <a href="/naao" target ="_blank" className="image">
+              <img src={pic2} alt="" />
+            </a>
+            <div className="content">
+              <h2 className="major">
+                <a href="/naao" target ="_blank" rel="noopener noreferrer">Naao Platform</a></h2>
+              <p>
+              A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. 
+              The entire system has been designed by me including the logo, splash screens, 
+              onboarding pages and Graphic Assets necessary to upload the app on both iOS app store and Android play store.  <br/>
+              <strong>Platforms:</strong> <a href="https://apps.apple.com/app/id1446178590" target= "_blank" rel="noopener noreferrer">iOS </a>, 
+              <a href="https://play.google.com/store/apps/details?id=com.bdgeeks.naao" target= "_blank" rel="noopener noreferrer">Android</a> <br/>
+              <strong>Tools:</strong> Sketch, Photoshop, Illustrator <br/>
+              <strong>Plugin:</strong> Craft, Zeplin, Iconify | <strong>Font:</strong> Roboto, FontAwesome <br/>
+              <strong>Design System:</strong> <a href="https://nativebase.io/" target="_blank" rel="noopener noreferrer">NativeBase components</a>  <br/>
+              <strong>Developer:</strong> <a href="https://www.codementor.io/foysalit" target= "_blank" rel="noopener noreferrer">Foysal Ahamed</a> <br/>
+              </p>
+              <a href="https://naao.delivery/" target="_blank" rel="noopener noreferrer" className="special">
+                Visit Naao
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="three" className="wrapper spotlight style3">
+        <div className="inner">
             <a href="/jarme" target ="_blank" className="image">
               <img src={pic1} alt="" />
             </a>
@@ -318,45 +365,6 @@ const IndexPage = () => {
               </p>
               <a href="https://jarmemori.es" target="_blank" rel="noopener noreferrer" className="special">
                 Visit Jarme
-              </a>
-            </div>
-          </div>
-        </section>
-        <section id="two" className="wrapper alt spotlight style2">
-          <div className="inner">
-            <a href="/naao" target ="_blank" className="image">
-              <img src={pic2} alt="" />
-            </a>
-            <div className="content">
-              <h2 className="major">
-                <a href="/naao" target ="_blank" rel="noopener noreferrer">Naao Platform</a></h2>
-              <p>
-              A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. 
-              Designed the <a href="https://naao.delivery/" target="_blank" rel="noopener noreferrer">website</a> and the mobile app (<a href="https://play.google.com/store/apps/details?id=com.bdgeeks.naao" target="_blank" rel="noopener noreferrer">Android</a>, <a href="https://apps.apple.com/app/id1446178590" target="_blank" rel="noopener noreferrer">iOS</a>) using Photoshop, 
-              Illustrator, Sketch and <a href="https://nativebase.io/" target="_blank" rel="noopener noreferrer">NativeBase components</a> design guideline 
-              for platform agnostic look and feel and worked very closely with <a href="https://www.codementor.io/foysalit" target= "_blank" rel="noopener noreferrer">Foysal Ahamed</a>, the developer of Naao throughout the process of building the platform. <br/>
-
-              </p>
-              <a href="https://naao.delivery/" target="_blank" rel="noopener noreferrer" className="special">
-                Visit Naao
-              </a>
-            </div>
-          </div>
-        </section>
-        <section id="three" className="wrapper spotlight style3">
-          <div className="inner">
-            <a href="/#" className="image">
-              <img src={pic3} alt="" />
-            </a>
-            <div className="content">
-              <h2 className="major">A series of unfortunate events</h2>
-              <p>
-                This app is currently under the design and development process.
-                The idea has been generated very recently and we are trying our best 
-                to get it up and running as soon as possible. Till then stay tuned! 
-              </p>
-              <a href="/#" className="special">
-                Learn more
               </a>
             </div>
           </div>
