@@ -292,9 +292,8 @@ const IndexPage = () => {
           <a 
             href={config.socialLinks[3].url} 
             target="_blank" 
-            className="hire-me-btn"
             rel="noopener noreferrer" 
-            className="button primary small">
+            className="hire-me-btn button primary small">
             Hire Me
           </a>
         </div>
@@ -313,7 +312,7 @@ const IndexPage = () => {
               </h2>
               <p>
               Designed the entire suite of diary/mood tracker app using Sketch
-              and Photoshop and worked closely with the developer throughout the 
+              and Photoshop and worked closely with the <a href="https://www.codementor.io/foysalit" target= "_blank" rel="noopener noreferrer">developer</a> throughout the 
               process of building a production ready platform. 
               Jarme is currently available on <a href="https://apps.apple.com/us/app/jarme-diary-mood-tracker/id1112553386" target= "_blank" rel="noopener noreferrer">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.bdgeeks.jarme&hl=en" target= "_blank" rel="noopener noreferrer">Android</a>, <a href="https://web.jarmemori.es/auth#/auth" target= "_blank" rel="noopener noreferrer">web</a> and Desktop (Macintosh & Linux).
               </p>
@@ -332,7 +331,11 @@ const IndexPage = () => {
               <h2 className="major">
                 <a href="/naao" target ="_blank" rel="noopener noreferrer">Naao Platform</a></h2>
               <p>
-              A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. Designed the website and the mobile app (Android, iOS) using Photoshop, Illustrator and Sketch and nativebase component design guideline for platform agnostic look and feel.
+              A crowsourced package delivery platform inspired by Justeat, Airbnb and Uber. 
+              Designed the <a href="https://naao.delivery/" target="_blank" rel="noopener noreferrer">website</a> and the mobile app (<a href="https://play.google.com/store/apps/details?id=com.bdgeeks.naao" target="_blank" rel="noopener noreferrer">Android</a>, <a href="https://apps.apple.com/app/id1446178590" target="_blank" rel="noopener noreferrer">iOS</a>) using Photoshop, 
+              Illustrator, Sketch and <a href="https://nativebase.io/" target="_blank" rel="noopener noreferrer">NativeBase components</a> design guideline 
+              for platform agnostic look and feel and worked very closely with <a href="https://www.codementor.io/foysalit" target= "_blank" rel="noopener noreferrer">Foysal Ahamed</a>, the developer of Naao throughout the process of building the platform. <br/>
+
               </p>
               <a href="https://naao.delivery/" target="_blank" rel="noopener noreferrer" className="special">
                 Visit Naao
