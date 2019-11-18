@@ -2,7 +2,7 @@
 path: "/blog/Post 1"
 date: "2019-05-04"
 readingTime: "10"
-title: "Day 1 - 100daysofcode"
+title: "Day 1"
 ---
 
 Hello everyone,
@@ -33,7 +33,39 @@ After that, he continued learning, building and working on projects while I move
 
 When designing Jarme and Naao I have realised that my lack of knowledge in what can and can't be built with a programming language was making it extremely difficult for Foysal to build the apps especially Jarme. My design for Jarme was inconsistent and did not follow any design system library. I was also designing components that were a bit unrealistic in terms of programming and even if there was a time consuming way of coding it, the app would end up buggy and slow. Foysal and I were arguing a lot as I was in the impression that he was not liking my designs while in reality the designs were actually very unrealistic to begin with. Hence why I have decided to learn more about programming which will improve my design thinking a lot more and reduce the conflict between the designer and the developer.
 
+--- 
 # So what have I learnt today? 
 
-The blog section of my portfolio did not exist till today. With a lot of help from Foysal and [Gatsby](https://www.gatsbyjs.org/), I have finally got it up and running. 
+# 1. BLOG 
 
+The blog section of my portfolio did not exist till today. With a lot of help from Foysal and [Gatsby](https://www.gatsbyjs.org/), I have finally got it up and running. Playing around with the blog and this post will also be part of my #100DaysOfCode challenge.
+
+# 2. TERMS
+
+Developers use a lot of terms in blogs or twitter that I am unfamilier with so I have decided to google a few terms and understand what they meant. 
+
+### Domain & Servers 
+---
+
+**Domain** is the name of the address of a website. For example, https://www.facebook.com. Its like having a phone number for your mobile. Without the mobile number no one knows where to call you or find you. 
+
+**Servers** Server is like a piece of land you buy or rent out to live in. It does not necessarily mean you have a home with beautiful furnitures. But when you do have a beautiful home with furnitures, you have a land where you can put it onto. If that makes sense! 
+
+Also do you know what **Favicon** is?
+
+**Favicon** - Favicon is the small icon that appears on the tab of the browsers. 
+
+
+### Caches & Cookies 
+---
+
+**Cache** - When a visitor repeatedly visits the same website, cache stores certain elements for the user to reduce the loading time of the website.
+
+**Cookies** - Cookies on the other hand saves information such as password, visiting date & time, IP address, browser for a short period of time and sends this information back to the server when the user revisits the next time. This allows the site to represented data that suits your needs in a more convenient way.
+
+# Front-End development VS Back-End development
+---
+
+**Front-end** - In front end development is coding the part that is visible to the users. For example, menu, buttons, cards etc.
+
+**Back-end** - Back-end development is mostly the server side of the programming where the developers work with databases and its also not visible to the users. 
