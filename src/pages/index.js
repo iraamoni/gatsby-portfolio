@@ -378,7 +378,7 @@ const IndexPage = () => {
 
             <section className="features">
               {projectSection.projects.slice(0, openedSections.indexOf(projectSection.title) >= 0 ? projectSection.projects.length : 2).map(project => (
-                <article>
+                <article key={project.link}>
                   <a href={project.link || "/#"} className="image">
                     <img src={project.image} alt="" />
                   </a>
