@@ -23,8 +23,8 @@ const IndexPage = ({
             {/* <span className="icon fa-diamond"></span> */}
             <img src={pic28} alt=""/>
           </div>
-          <h2>{config.heading}</h2>
-          <p>{config.subHeading}</p>
+          <h2>Suborna's Blog</h2>
+          <p>This blog is all about my journey towards the <strong>100daysofcoding</strong> challenge</p>
           <ul className="contact">
           {config.socialLinks.map(social => {
             const { icon, url, name } = social;

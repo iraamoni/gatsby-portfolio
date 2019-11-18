@@ -17,7 +17,7 @@ export default function Template({
                 <div className="inner">
                 <h2>{ frontmatter.title }</h2>
                 <p>
-                    Published {frontmatter.date}
+                    {frontmatter.date}
                     <ReadingTime readingTime={frontmatter.readingTime} />
                 </p>
                 </div>

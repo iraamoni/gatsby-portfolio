@@ -7,10 +7,10 @@ const ReadingTime = ({ readingTime }) => {
     const timeInNumber = parseInt(readingTime);
 
     if (timeInNumber < 60) {
-        return <> |  {readingTime} minutes</>;
+        return <> |  {readingTime} minutes read</>;
     }
 
-    return <> |  More than an hour</>;
+    return <> |  More than an hour read</>;
 };
 
 export default ReadingTime;
