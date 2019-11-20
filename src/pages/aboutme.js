@@ -9,33 +9,29 @@ const skillSections = [
     [
         {
             percentage: 75,
-            title: "Adobe Photoshop",
+            title: "Photoshop",
             pathColor: '#9DABDD',
         },
-        {
-            percentage: 50,
-            title: "Adobe Illustrator",
-            pathColor: '#4AA789',
-        },
-        {
-            percentage: 30,
-            title: "Adobe XD",
-            pathColor: '#cb7d8a',
-        },
-    ],
-    [
         {
             percentage: 70,
             title: "Sketch",
             pathColor: '#ab6093',
         },
         {
-            percentage: 35,
+            percentage: 50,
             title: "Figma",
             pathColor: '#ECBE7A',
         },
-    ],
-    [ 
+        {
+            percentage: 40,
+            title: "Illustrator",
+            pathColor: '#4AA789',
+        },
+        {
+            percentage: 30,
+            title: "XD",
+            pathColor: '#cb7d8a',
+        },
         {
             percentage: 60,
             title: "HTML",
@@ -81,7 +77,7 @@ const IndexPage = () => {
                 front-end development tools such as HTML, CSS, JavaScript to 
                 be able to create a frictionless interaction between design and 
                 the development process.
-                    
+
                 </p>
 
                 <h3 className="major">Education</h3>
@@ -106,7 +102,7 @@ const IndexPage = () => {
                                     <CircularProgressbar
                                         value={pageIsLoaded ? skill.percentage : 0}
                                         text={`${pageIsLoaded ? skill.percentage : 0}%`}
-                                        backgroundPadding ={5}
+                                        backgroundPadding ={6}
                                         background = {true}
                                         styles={buildStyles({
                                             pathColor: skill.pathColor,
@@ -142,9 +138,9 @@ const IndexPage = () => {
                         started learning how to code. After sometime of learning the basics, he built a 
                         website on his own called BDGEEKS in 2013 where he would upload programming related 
                         tutorials in Bengali but he did not like the look and feel of the website. This is 
-                        where I jumped in and helped him out by trying to design a website for him.</p>
+                        where I jumped in and helped him out by trying to design a website for him.
                         
-                        <p>After that, 
+                        After that, 
                         he continued learning, building and working on projects while I moved onto print 
                         designing. I uploaded a few business cards and brochures from 2013 to 2014 
                         Graphic River. And again all of this was just out of curiosity and time 
@@ -171,12 +167,41 @@ const IndexPage = () => {
                 system. I was also designing components that were a bit unrealistic in terms
                 of programming and even if there was a time consuming way of coding it, 
                 the app would end up being unintuitive from a UX perspective. Foysal and
-                    I were arguing a lot as I was in the impression that he was not liking my
-                    designs while in reality the designs were actually very unrealistic to 
-                    begin with. Hence why I have decided to learn more about programming 
-                    which I believe will improve my design thinking a lot more and reduce 
-                    the friction between the designer and the developer. <br/> 
+                I were arguing a lot as I was in the impression that he was not liking my
+                designs while in reality the designs were actually very unrealistic to 
+                begin with. Hence why I have decided to learn more about programming 
+                which I believe will improve my design thinking a lot more and reduce 
+                the friction between the designer and the developer. <br/> 
                 </p>
+                <h3 className="major">More about me</h3>
+                <h4>Hobbies</h4> 
+                <ul>
+                    <li>
+                        Travelling
+                    </li>
+                    <li>
+                        Hiking
+                    </li>
+                    <li>
+                        Reading (Crime, fiction & Mystery)
+                    </li>
+                    <li>
+                        Cycling
+                    </li>
+                </ul>
+            
+                <h4>Languages</h4> 
+                <ul>
+                    <li>
+                        English (Fluent)
+                    </li>
+                    <li>
+                        Bengali (Mother tongue)
+                    </li>
+                    <li>
+                        Italian (Beginner)
+                    </li>
+                </ul>
                 </div>
                 </div>
             </section>
