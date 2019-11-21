@@ -139,7 +139,7 @@ const IndexPage = () => {
                 <h3 className="major">why particularly UI/UX design?</h3> 
                 <div className="col-6 col-12-medium">
                     <p>To answer this I have to go back to 2011, when my awfully 
-                        smart husband: <a href="https://foysal.it" target="_blank">Foysal Ahamed</a> first 
+                        smart husband: <a href="https://foysal.it" target="_blank" rel="noopener noreferrer">Foysal Ahamed</a> first 
                         started learning how to code. After sometime of learning the basics, he built a 
                         website on his own called BDGEEKS in 2013 where he would upload programming related 
                         tutorials in Bengali but he did not like the look and feel of the website. This is 
@@ -153,19 +153,19 @@ const IndexPage = () => {
                         </p>
                         <p>
                         In 2015, I got caught up with the thesis, coursework and exams of my final 
-                        year of bachelors. <a href="https://codementor.io/foysalit" target="_blank">Foysal</a> then 
+                        year of bachelors. <a href="https://codementor.io/foysalit" target="_blank" rel="noopener noreferrer">Foysal</a> then 
                         moved into mobile app development 
                         and since then together we have built Jarme: a colourful diary app 
                         and Naao: a crowdsourced package delivery app both of which are currently 
                         available on Android and iOS. I really enjoyed working on both of these 
-                        projects with <a href="https://twitter.com/foysalit" target="_blank">Foysal</a> and it 
+                        projects with <a href="https://twitter.com/foysalit" target="_blank" rel="noopener noreferrer">Foysal</a> and it 
                         finally made me realise that this is something I 
                         really want to build my career on.</p>
                                     
                 </div>
                 <h3 className="major">Programming</h3>
                 <p>
-                When designing <a href="https://www.jarmemori.es" target="_blank">Jarme</a> and <a href="https://www.naao.delivery" target="_blank">Naao</a> I have realised that my lack of 
+                When designing <a href="https://www.jarmemori.es" target="_blank" rel="noopener noreferrer">Jarme</a> and <a href="https://www.naao.delivery" target="_blank" rel="noopener noreferrer">Naao</a> I have realised that my lack of 
                 knowledge in what can and can't be built with a programming language 
                 was making it extremely difficult for to build the apps especially 
                 Jarme. My design for Jarme was inconsistent and did not follow any design 
