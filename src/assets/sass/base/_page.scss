@@ -63,7 +63,8 @@ html {
   }
 }
 
-.blog-post-content pre[class*=language-] {
+.blog-post-content pre[class*=language-], 
+.blog-post-content :not(pre)>code[class*=language-] {
   background-color: _palette(bg);
   padding: 0;
 }
