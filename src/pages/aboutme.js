@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 import Layout from '../components/Layout';
+import analytics from "../analytics";
 
 
 const skillSections = [
@@ -52,6 +53,10 @@ const skillSections = [
 
 
 const IndexPage = () => {
+    useEffect(() => {
+      analytics.page();
+    }, []);
+  
     const [pageIsLoaded, setPageIsLoaded] = useState(false);
     setTimeout(() => setPageIsLoaded(true), 300);
 

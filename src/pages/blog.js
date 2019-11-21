@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 
 import Layout from '../components/Layout';
@@ -6,12 +6,17 @@ import PostLink from "../components/post-link"
 
 import pic28 from '../assets/images/pic28.jpg';
 import config from '../../config';
+import analytics from "../analytics";
 
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
   },
 }) => {
+  useEffect(() => {
+    analytics.page();
+  }, []);
+
   const posts = edges
     .filter(edge => !!edge.node.frontmatter.date);
 

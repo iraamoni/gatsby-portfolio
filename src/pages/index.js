@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Layout from '../components/Layout';
+import analytics from "../analytics";
 
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
@@ -249,10 +250,18 @@ const projectSections = [
 ];
 
 const IndexPage = () => {
+  useEffect(() => {
+    analytics.page();
+  }, []);
+
   const [openedSections, setOpenedSections] = useState([]);
 
   const openSection = (projectSectionTitle) => {
     const newOpenedSections = [...openedSections, projectSectionTitle];
+    analytics.track('portfolioSeeMoreButtonClicked', {
+      label: 'portfolio item see more',
+      category: 'portfolioItem',
+    });
     setOpenedSections(newOpenedSections);
   };
 
@@ -371,14 +380,14 @@ const IndexPage = () => {
         </section>
         
         {projectSections.map((projectSection, i) => (
-          <section className={`wrapper project ${(i%2) === 0 ? "alt" : ""} style${i+1}`}>
+          <section className={`wrapper project ${(i%2) === 0 ? "alt" : ""} style${i+1}`} key={projectSection.title}>
           <div className="inner">
             <h2 className="major">{ projectSection.title }</h2>
             <p>{projectSection.description}</p>
 
             <section className="features">
               {projectSection.projects.slice(0, openedSections.indexOf(projectSection.title) >= 0 ? projectSection.projects.length : 2).map(project => (
-                <article key={project.link}>
+                <article key={project.title}>
                   <a href={project.link || "/#"} className="image">
                     <img src={project.image} alt="" />
                   </a>

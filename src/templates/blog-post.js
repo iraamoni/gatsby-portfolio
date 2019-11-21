@@ -1,15 +1,20 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
 
 import ReadingTime from "../components/reading-time";
 import Layout from "../components/Layout";
+import analytics from "../analytics";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
-  console.log(frontmatter);
+
+  useEffect(() => {
+    analytics.page();
+  }, []);
+
   return (
     <Layout fullMenu>
         <section id="wrapper">

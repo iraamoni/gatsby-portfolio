@@ -37,7 +37,6 @@ module.exports = {
       name: 'Behance ',
       url: 'https://behance.net/suborna',
     },
-    
   ],
 
 };
