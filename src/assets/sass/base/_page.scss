@@ -63,6 +63,7 @@ html {
   }
 }
 
-.blog-post-content .language-html {
+.blog-post-content pre[class*=language-] {
   background-color: _palette(bg);
+  padding: 0;
 }
