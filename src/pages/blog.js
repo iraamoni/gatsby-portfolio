@@ -21,7 +21,7 @@ const IndexPage = ({
     .filter(edge => !!edge.node.frontmatter.date);
 
   return (
-    <Layout>
+    <Layout fullMenu>
         <section id="banner">
         <div className="inner">
           <div className="logo">

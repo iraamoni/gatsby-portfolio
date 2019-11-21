@@ -88,7 +88,7 @@ const IndexPage = () => {
                 <h3 className="major">Education</h3>
                 <ul>
                     <li>
-                        MSc Haematology & Transfusion Science <br/> Middlesex University | London, UK <br/> Oct 2015 - Jul 1017
+                        MSc Haematology & Transfusion Science <br/> Middlesex University | London, UK <br/> Oct 2015 - Jul 2017
                     </li>
                     <br/>
                     <li>
@@ -165,9 +165,9 @@ const IndexPage = () => {
                 </div>
                 <h3 className="major">Programming</h3>
                 <p>
-                When designing Jarme and Naao I have realised that my lack of 
+                When designing <a href="https://www.jarmemori.es" target="_blank">Jarme</a> and <a href="https://www.naao.delivery" target="_blank">Naao</a> I have realised that my lack of 
                 knowledge in what can and can't be built with a programming language 
-                was making it extremely difficult for Foysal to build the apps especially 
+                was making it extremely difficult for to build the apps especially 
                 Jarme. My design for Jarme was inconsistent and did not follow any design 
                 system. I was also designing components that were a bit unrealistic in terms
                 of programming and even if there was a time consuming way of coding it, 
