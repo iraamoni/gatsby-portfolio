@@ -162,59 +162,7 @@ h1 {
 **Output:** Cat Shop is blue.  
 **Reason:** `!important` is the most powerful of all. So when you absolutely need to be sure that an element has specific CSS, you can use `!important` which overrides all of `element, class, ID selectors` and `inline style attribute.` Using `!important` should be last resort when attempting to override a previously defined style rule.
 
-<!-- --- 
-<section>
-						<div className="table-wrapper">
-						<div className="table-wrapper">
-							<table className="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Meaning</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>H1</td>
-										<td>Element Selector.</td>
-									</tr>
-									<tr>
-										<td>.blue-text</td>
-										<td>Class Selector.</td>
-									</tr>
-									<tr>
-										<td>#blue-text</td>
-										<td>ID Selector</td>
-									</tr>
-									<tr>
-										<td>Color</td>
-										<td>Property</td>
-									</tr>
-									<tr>
-										<td>Orange</td>
-										<td>Value</td>
-									</tr>
-                                    <tr>
-										<td>Declaration</td>
-										<td>Value + Property</td>
-									</tr>
-                                    <tr>
-										<td>{ }</td>
-										<td>Declaration block</td>
-									</tr>
-                                    <tr>
-										<td>h1 {color: blue}</td>
-										<td>CSS ruleset</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colSpan="2"></td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
+</section>
 
 
- -->
+
