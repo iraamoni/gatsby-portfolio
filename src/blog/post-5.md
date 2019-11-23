@@ -51,7 +51,7 @@ After being done with the web page, I have done the "Applied Visual Course" on f
 # HTML
 
 - `text-align: justify;` Causes all lines of text except the last line to meet the left and right edges of the line box.
-- `text-decoration:` Line-through; to the element. </br>
+- `text-decoration: Line-through` draws a 1px line across the text at its "middle" point. </br>
 - `<s></s>:` HTML line through tag
 - `<hr>` border. Adds a horizontal line across the width of its containing element (self-closing tag).
 
