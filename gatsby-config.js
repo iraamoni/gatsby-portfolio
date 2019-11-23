@@ -28,6 +28,9 @@ module.exports = {
         path: `${__dirname}/src/blog`,
       },
     },
+    'gatsby-plugin-sharp',
+    `gatsby-plugin-analytics`,
+    // In your gatsby-config.js
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -37,17 +40,7 @@ module.exports = {
             options: {
               maxWidth: 960
             }
-          }
-        ]
-      }
-    },
-    'gatsby-plugin-sharp',
-    `gatsby-plugin-analytics`,
-    // In your gatsby-config.js
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

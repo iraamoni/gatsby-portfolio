@@ -1,11 +1,14 @@
 ---
 path: "/blog/day-five-of-100daysofcode"
 date: "2019-11-22"
-readingTime: "7"
+readingTime: "4"
 title: "Day 5"
 ---
+
 Today I have built a web page by following a tutorial from [Youtube](https://www.youtube.com/watch?v=-2LtZRi6Q0s&t=106s). Out of all the things I have learned from this tutorial, applying **gradient** was the most exciting part. </br>
 Below is a demonstration of how I applied gradient on the `sign-up` button: 
+
+![diamond](./images/diamond.png)
 
 #Diamond web page
 
