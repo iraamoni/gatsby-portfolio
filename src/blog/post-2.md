@@ -2,7 +2,7 @@
 path: "/blog/day-two-of-100daysofcode"
 date: "2019-11-19"
 readingTime: "5 - 7"
-title: "Day 2"
+title: "Day 2 - Signup page"
 ---
 
 Today has been a very productive day. I have gone through the basics of HTML again from [freecodecamp](https://www.freecodecamp.org/suborna) and finished the whole course. I have also created a beautiful sign-up form by following a tutorial from Youtube which was created by [Clever Techie](https://www.freecodecamp.org/suborna). The form was created using HTML and CSS. A few things I wasn't aware of until I made this form was: 

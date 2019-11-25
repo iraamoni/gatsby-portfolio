@@ -2,15 +2,14 @@
 path: "/blog/day-five-of-100daysofcode"
 date: "2019-11-22"
 readingTime: "4"
-title: "Day 5"
+title: "Day 5 - Diamond web page"
 ---
 
 Today I have built a web page by following a tutorial from [Youtube](https://www.youtube.com/watch?v=-2LtZRi6Q0s&t=106s). Out of all the things I have learned from this tutorial, applying **gradient** was the most exciting part. </br>
 Below is a demonstration of how I applied gradient on the `sign-up` button: 
+# Diamond web page
 
 ![diamond](./images/diamond.png)
-
-#Diamond web page
 
 ``` html
 <div class="menu">  
@@ -46,7 +45,7 @@ Below is a demonstration of how I applied gradient on the `sign-up` button:
 
 ````
 
-After being done with the web page, I have done the "Applied Visual Course" on freecodecamp](https://www.freecodecamp.org/suborna). And there are a few new things I have learnt from this course: 
+After being done with the web page, I have done the "Applied Visual Course" on [freecodecamp](https://www.freecodecamp.org/suborna). And there are a few new things I have learnt from this course: 
 
 # HTML
 

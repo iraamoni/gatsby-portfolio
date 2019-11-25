@@ -2,7 +2,7 @@
 path: "/blog/day-three-of-100daysofcode"
 date: "2019-11-20"
 readingTime: "2-3"
-title: "Day 3"
+title: "Day 3 - Basic CSS practice"
 ---
 
 Today has been a very unproductive day. Me and Foysal went out to have some sushi in Shushi Moori. It was really good and my all time favourite is Grilled Salmon. After we came back from the sushi, we had to take a nap! I don't know why this happens every time we have sushi. They must put something in it that makes you sleepy every time you have it. Anyways, after the nap, I did some basics of CSS from the [freecodecamp](https://www.freecodecamp.org/suborna) (upto number 14). And that's all. 

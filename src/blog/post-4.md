@@ -2,7 +2,7 @@
 path: "/blog/day-four-of-100daysofcode"
 date: "2019-11-21"
 readingTime: "10-15"
-title: "Day 4"
+title: "Day 4 - CSS OVERRIDE HIERARCHY"
 ---
 
 I have finished the "basic CSS" course today from [freecodecamp](https://www.freecodecamp.org/suborna). Among the new things I have learnt today, variables, how to style something using attribute values and CSS specificity are the most interesting ones. The next course is Applied visual design. I am really excited to see what that course is about.

@@ -2,7 +2,7 @@
 path: "/blog/day-one-of-100daysofcode"
 date: "2019-11-18"
 readingTime: "10"
-title: "Day 1"
+title: "Day 1 - Blog setup"
 ---
 
 Hello everyone,
