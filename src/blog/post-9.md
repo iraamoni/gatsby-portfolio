@@ -1,7 +1,7 @@
 ---
 path: "/blog/day-nine-of-100daysofcode"
 date: "2019-11-26"
-readingTime: ""
+readingTime: "2"
 title: "Day 9 - Lilac Grid Webpage"
 ---
 
@@ -52,4 +52,5 @@ So yesterday I have spent some time playing around with CSS Grid and today decid
     grid-column: 2 / 4;
 }
 ```
+
 ![lilac](./images/lilac.jpg)
