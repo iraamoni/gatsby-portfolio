@@ -326,7 +326,7 @@ const IndexPage = () => {
                 <strong>Tool: </strong>Figma | <strong>Font: </strong>Roboto, FontAwesome<br/>
                 <strong>Plugins: </strong> Map Maker, Iconify, Loreum Ipsum <br/>
               </p>
-              <a href="/#" className="special">
+              <a href="/gtt" className="special">
                 Learn more
               </a>
             </div>
