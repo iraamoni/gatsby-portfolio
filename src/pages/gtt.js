@@ -20,12 +20,12 @@ const IndexPage = () => (
       
       <div className="wrapper">
         <div className="inner">
-          <h3 className="major">what is GTT bus app?</h3>
+          {/* <h3 className="major">what is GTT bus app?</h3>
           <p>
-          GTT is a bus app we currently use quite frequently in Torino, Italy where
-          I am currently living with my husband on a temporary basis. The usability is pretty straight 
-          forward but the look and feel of the app does not meet the currently design trends. The original app
-          is currently available on both iOS and Android. Check it out here: 
+          GTT is a bus app we use quite frequently in Torino, Italy where
+          I am currently living with my husband on a temporary/permanent basis.
+          Although the user experience of the original app is quite straight forward it still 
+          requires improvement in its features and usabilities. 
           </p>
 
           <ul>
@@ -43,7 +43,7 @@ const IndexPage = () => (
           <p>
             Below is a demonstration of how I have transformed the UI & UX of the original GTT app to 
             a vibrant and minimalistic look with better user-experience.   
-          </p>
+          </p> */}
           {/* <h3>
           Landing page
           <hr></hr>
