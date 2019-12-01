@@ -44,7 +44,7 @@ const IndexPage = () => (
             Below is a demonstration of how I have transformed the UI & UX of the original GTT app to 
             a vibrant and minimalistic look with better user-experience.   
           </p>
-          <h3>
+          {/* <h3>
           Landing page
           <hr></hr>
           </h3>
@@ -59,12 +59,12 @@ const IndexPage = () => (
           - access favourite directly<br/>
           - access the information of the nearby stops <br/>
           - Colour coded<br/>
-          -- <strong>GREEN</strong> - Buses/trams will arrive within 5 minutes<br/>
-          -- <strong>YELLOW</strong> - Buses/trams will arrive within 10 minutes<br/>
-          -- <strong>RED</strong> - Buses/trams will arrive after 10 minutes <br/>
+          <strong>GREEN</strong> - Buses/trams will arrive within 5 minutes<br/>
+          <strong>YELLOW</strong> - Buses/trams will arrive within 10 minutes<br/>
+          <strong>RED</strong> - Buses/trams will arrive after 10 minutes <br/>
           - Distance meters with color codes
 
-          </p>
+          </p> */}
           <div class = "image fit">
                 <img src={bus_landing} alt="" />
               </div>
