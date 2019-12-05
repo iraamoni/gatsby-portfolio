@@ -63,8 +63,8 @@ const IndexPage = ({
       <section id="wrapper">
         <section className="blog-section">
             {posts.map((edge, i) => (
-                <section key={edge.node.id} className={`wrapper project ${(i%2) === 0 ? "alt" : ""} style${i+1}`}>
-                    <div className="inner">
+                <section key={edge.node.id} className={`wrapper blog-wrapper ${(i%2) === 0 ? "alt" : ""}`}>
+                    <div className="inner blog-inner">
                         <PostLink key={edge.node.id} post={edge.node} />
                     </div>
                 </section>
@@ -74,6 +74,8 @@ const IndexPage = ({
     </Layout>
   );
 }
+
+
 
 export default IndexPage
 
