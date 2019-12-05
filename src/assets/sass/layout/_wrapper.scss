@@ -151,9 +151,6 @@
   &.blog-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
-    .inner {
-      padding: 0em 0 1em 0;
-    }
   }
 
   &.alt {
@@ -170,6 +167,9 @@
     @include padding(3em, 0);
     margin: 0 auto;
     width: _size(inner);
+    &.blog-inner {
+      padding: 0em 0 1em 0;
+    }
   }
 
   @for $i from 2 through _misc(max-wrapper-styles) {
@@ -302,6 +302,9 @@
     .inner {
       @include padding(3em, 3em);
       width: 100%;
+      &.blog-inner {
+        padding: 3em 3em;
+      }
     }
 
     &.spotlight {
@@ -337,6 +340,9 @@
 
     .inner {
       @include padding(2em, 2em);
+      &.blog-inner {
+        padding: 2em 2em;
+      }
     }
 
     &.spotlight {
@@ -374,6 +380,9 @@
   @include breakpoint('<=xxsmall') {
     .inner {
       @include padding(2em, 1.5em);
+      &.blog-inner {
+        padding: 0em 1.5em 1em 2em;
+      }
     }
   }
 }
