@@ -9,7 +9,7 @@ I have started coding very recently (about 1-2 months) and have been using Visua
 
 VS code as well as the plugins I mentioned below was recommended to me by my husband [Foysal](https://www.codementor.io/foysalit) who has 8 years of experience in full stack development. He had other plugin recommendations too but I, as a codeNewBie did not feel the need of those plugins just yet. The plugins below not only made my life as a codeNewBie a lot easier but it also allowed me get things done quicker in a less frustrated way as well as made my editor feel more like a home I decorated myself.  
 
-In order to install the plugins, you can click on extensions icon found on the side menu and just type the plugin names.
+In order to install the plugins, you can click on extensions icon found on the side menu and just type in the plugin names.
 
 ![extension](./images/extension.png)
 
