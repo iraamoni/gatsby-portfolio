@@ -1,7 +1,7 @@
 ---
 path: "/blog/day-nineteen-of-100daysofcode"
 date: "2019-12-06"
-readingTime: ""
+readingTime: "10"
 title: "Day 19 - VS code plugins for codeNewbies"
 ---
 
