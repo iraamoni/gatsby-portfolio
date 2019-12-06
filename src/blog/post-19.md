@@ -50,7 +50,7 @@ Link: [Carbon-now-sh](https://carbon.now.sh/)
 
 This plugin underlines any mistakes I have made in my code which might end up causing an error. Instead of going through the code and figuring out myself what might be causing the error, I can just skim through the code very quickly to see if any of my code is underlined before I look for the other reasons why my code might not be working as it should.
 
-Link: [Code Spell Checker] (https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+Link: [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 ### plugin 5 - Rainbow Brackets
 
@@ -80,6 +80,8 @@ If you are someone like me who spent like a whole day playing around with themes
 ### plugin 7 - Icons
 
 I am currently using [Material Theme Icon](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) which changes the current file icons to material theme icons. I feel like these icons are a lot more representable, highly contrasted and eye catching! But you can explore other icon packs too from the extensions too. 
+
+Link: [Material Icon](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme/)
 
 ![plugin-material-icon](./images/plugin-material-icon.png)
 
