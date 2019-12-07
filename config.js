@@ -15,12 +15,12 @@ module.exports = {
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/suborna00',
+      url: 'https://twitter.com/iraamoni',
     },
     {
       icon: 'fa-leaf',
       name: 'GraphicRiver',
-      url: 'https://graphicriver.net/user/hexkode/portfolio',
+      url: 'https://graphicriver.net/user/iraamoni',
     },
     {
       icon: 'fa-envelope-o',
@@ -30,12 +30,12 @@ module.exports = {
     {
       icon: 'fa-dribbble',
       name: 'Dribble',
-      url: 'https://dribbble.com/suborna',
+      url: 'https://dribbble.com/iraamoni',
     },
     {
       icon: 'fa-behance ',
       name: 'Behance ',
-      url: 'https://behance.net/suborna',
+      url: 'https://behance.net/iraamoni',
     },
   ],
 

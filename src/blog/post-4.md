@@ -96,7 +96,7 @@ h1 {
 ### Scenario 5
 
 ```html
-<h1 id="orange-text" "class="blue-text pink-text">
+<h1 id="orange-text" class="blue-text pink-text">
     Cat Shop
 </h1>
 ```
@@ -125,7 +125,7 @@ h1 {
 ### Scenario 6
 
 ``` html
-<h1 style="color: black;" id="orange-text" "class="blue-text pink-text">
+<h1 style="color: black;" id="orange-text" class="blue-text pink-text">
     Cat Shop
 </h1>
 ```
@@ -136,7 +136,7 @@ h1 {
 ### Scenario 7
 
 ``` html
-<h1 style="color: black;" id="orange-text" "class="blue-text pink-text">
+<h1 style="color: black;" id="orange-text" class="blue-text pink-text">
     Cat Shop
 </h1>
 ```

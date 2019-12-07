@@ -66,7 +66,7 @@ Link: [Rainbow Brackets](https://marketplace.visualstudio.com/items?itemName=2gu
 
 ![bracket-plugin-two](./images/bracket-plugin-two.png)
 
-# optional
+# Optional plugins
 ----
 ### plugin 6 - Theme 
 
