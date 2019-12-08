@@ -33,10 +33,16 @@ module.exports = {
       url: 'https://dribbble.com/iraamoni',
     },
     {
-      icon: 'fa-behance ',
+      icon: 'fa-behance',
       name: 'Behance ',
       url: 'https://behance.net/iraamoni',
     },
+    {
+      icon: 'fab fa-dev',
+      name: 'Dribble',
+      url: 'https://dribbble.com/iraamoni',
+    },
+    
   ],
 
 };

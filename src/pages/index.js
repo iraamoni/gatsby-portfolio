@@ -102,7 +102,7 @@ const projectSections = [
     projects: [
       {
         image: pic35,
-        link: "https://naao.delivery/",
+        link: "https://naao.netlify.com/",
         title: "Naao Website",
       },
       {
@@ -351,7 +351,7 @@ const IndexPage = () => {
               <strong>Design System:</strong> <a href="https://nativebase.io/" target="_blank" rel="noopener noreferrer">NativeBase components</a>  <br/>
               <strong>Developer:</strong> <a href="https://www.codementor.io/foysalit" target= "_blank" rel="noopener noreferrer">Foysal Ahamed</a> <br/>
               </p>
-              <a href="https://naao.delivery/" target="_blank" rel="noopener noreferrer" className="special">
+              <a href="https://naao.netlify.com" target="_blank" rel="noopener noreferrer" className="special">
                 Visit Naao
               </a>
             </div>

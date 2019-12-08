@@ -165,7 +165,7 @@ const IndexPage = () => {
                 </div>
                 <h3 className="major">Programming</h3>
                 <p>
-                When designing <a href="https://www.jarmemori.es" target="_blank" rel="noopener noreferrer">Jarme</a> and <a href="https://www.naao.delivery" target="_blank" rel="noopener noreferrer">Naao</a> I have realised that my lack of 
+                When designing <a href="https://www.jarmemori.es" target="_blank" rel="noopener noreferrer">Jarme</a> and <a href="https://www.naao.netlify.com/" target="_blank" rel="noopener noreferrer">Naao</a> I have realised that my lack of 
                 knowledge in what can and can't be built with a programming language 
                 was making it extremely difficult for to build the apps especially 
                 Jarme. My design for Jarme was inconsistent and did not follow any design 
