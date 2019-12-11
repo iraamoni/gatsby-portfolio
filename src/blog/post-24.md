@@ -1,6 +1,6 @@
 ---
 path: "/blog/day-twentyfour-of-100daysofcode"
-date: "2019-11-12"
+date: "2019-12-11"
 readingTime: "10"
 title: "Day 24 - Tips for code newbies from an experienced programmer"
 ---
